@@ -1,0 +1,31 @@
+ext {
+
+    isApplication=false
+
+    android = [
+            compileSdkVersion:26,
+            applicationId:"com.wangzy.module_dev_demo",
+            minSdkVersion:15,
+            targetSdkVersion:26,
+            versionCode:1,
+            versionName:"1.0",
+            testInstrumentationRunner:"android.support.test.runner.AndroidJUnitRunner"
+    ]
+
+
+    dependencies=[
+            kotlin:"org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version",
+            appcompatv7:'com.android.support:appcompat-v7:26.1.0',
+            supportv4:'com.android.support:support-v4:26.1.0',
+            google_service:'com.google.android.gms:play-services-maps:8.3.0',
+            multidex:'com.android.support:multidex:1.0.1',
+            constraint: 'com.android.support.constraint:constraint-layout:1.0.2',
+            junit:'junit:junit:4.12',
+            androidTestImplementation:"com.android.support.test:runner:1.0.1",
+            androidTestImplementation:"com.android.support.test.espresso:espresso-core:3.0.1",
+            okhttp3100:'com.squareup.okhttp3:okhttp:3.10.0',
+            gson281:'com.google.code.gson:gson:2.8.1',
+            fastjson1168:'com.alibaba:fastjson:1.1.68.android',
+
+    ]
+}

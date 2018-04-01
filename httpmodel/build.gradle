@@ -1,0 +1,32 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        testInstrumentationRunner rootProject.ext.android.testInstrumentationRunner
+        resourcePrefix "model_http_"
+    }
+}
+
+dependencies {
+    implementation rootProject.ext.dependencies.appcompatv7
+    implementation rootProject.ext.dependencies.okhttp3100
+    implementation rootProject.ext.dependencies.gson281
+    implementation rootProject.ext.dependencies.fastjson1168
+    implementation rootProject.ext.dependencies.kotlin
+    implementation rootProject.ext.dependencies.appcompatv7
+    implementation rootProject.ext.dependencies.fastjson1168
+
+    testImplementation rootProject.ext.dependencies.junit
+    androidTestImplementation rootProject.ext.dependencies.androidTestImplementation
+    androidTestImplementation rootProject.ext.dependencies.androidTestImplementation
+}
+repositories {
+    mavenCentral()
+}
